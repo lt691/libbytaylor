@@ -1,13 +1,54 @@
 @font-face{
     font-family: Product Sans;
-    src: url("natprogrammer33/libbytaylor/Product Sans Regular.ttf");
+    src: url('natprogrammer33.github.io/libbytaylor/Product Sans Regular.ttf');
 }
-
+*{
+    text-align: center;
+    animation: fadein 1.5s;
+    -moz-animation: fadein 1.5s; /* Firefox */
+    -webkit-animation: fadein 1.5s; /* Safari and Chrome */
+    -o-animation: fadein 1.5s; /* Opera */
+}
+@keyframes fadein {
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-moz-keyframes fadein { /* Firefox */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-webkit-keyframes fadein { /* Safari and Chrome */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-o-keyframes fadein { /* Opera */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity: 1;
+    }
+}
 body{
     text-align: center;
     vertical-align: center;
 }
+
 .nav {
+    position: relative;
+    right: 20px;
     text-align:center;
     border: 3px solid green;
     border-radius: 13px;
@@ -28,6 +69,7 @@ body{
     text-decoration: none;
     color: green;
 }
+
 
 #home{
     border: 3px solid green;
@@ -114,4 +156,17 @@ body{
     padding-right: 125px;
     padding-bottom: 35px;
     font-size: 20px;
+}
+#footer{
+    border: 2px double black;
+    border-radius: 13px;
+    margin: 25px;
+}
+#footer a{
+    color: black;
+    text-decoration: none;
+}
+#footer a:hover{
+    color: green;
+    letter-spacing: 2px;
 }
