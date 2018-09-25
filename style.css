@@ -3,6 +3,7 @@
     src: url('natprogrammer33.github.io/libbytaylor/Product Sans Regular.ttf');
 }
 *{
+    font-family: Product Sans;
     text-align: center;
     animation: fadein 1.5s;
     -moz-animation: fadein 1.5s; /* Firefox */
@@ -47,14 +48,14 @@ body{
 }
 
 .nav {
-    position: relative;
-    right: 20px;
     text-align:center;
     border: 3px solid green;
     border-radius: 13px;
     margin: 25px;
 }
 .nav ul{
+    position: relative;
+    right: 25px;
     list-style-type: none;
     font-size: 35px;
     color: green;
@@ -112,7 +113,6 @@ body{
 }
 #research a :hover{
     color: green;
-    letter-spacing: 2px;
 }
 
 #teaching{
